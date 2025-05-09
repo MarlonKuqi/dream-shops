@@ -55,6 +55,5 @@ public class CategoryService implements ICategoryService {
                 .ifPresentOrElse(categoryRepository::delete, () -> {
                     throw new ResourceNotFoundException(CATEGORY_NOT_FOUND);
                 });
-
     }
 }
